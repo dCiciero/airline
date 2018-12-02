@@ -1,0 +1,12 @@
+{% extends "flights/base.html" %}
+{% block title %}
+    Error Occured
+{% endblock %}
+{% block body %}
+    <h2>An Error has Occured:</h2>
+    <p>{{ message }}</p>
+
+    <hr>
+    <p><a href="{% url 'index' %}">Go back</a></p>
+
+{% endblock %}
